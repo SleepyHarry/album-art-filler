@@ -1,10 +1,11 @@
-import sys
+import sys, os
 from lxml import etree
 
 if not __name__=="__main__":
     raise ImportWarning("Incorrect usage")
     sys.exit()
 
+#this isn't a raw string and yet it plays nice with backslashes. what?!
 filepath = "C:\Users\Harry\Music\iTunes\iTunes Music Library.xml"
 
 lib = etree.parse(open(filepath))
